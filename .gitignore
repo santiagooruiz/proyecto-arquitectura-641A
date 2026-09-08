@@ -78,6 +78,8 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+.env
+
 # IPython
 profile_default/
 ipython_config.py
@@ -216,3 +218,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Credenciales y configuracion local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials
+credentials.json
+.aws/
+# Estado de infraestructura
+terraform.tfstate
+terraform.tfstate.*
+.terraform/
+# Dependencias y temporales
+node_modules/
+__pycache__/
+*.log
+# Especificos de Windows y macOS
+Thumbs.db
+desktop.ini
+.DS_Store
